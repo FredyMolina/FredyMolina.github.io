@@ -90,11 +90,11 @@ class Mokepon {
     }
 }
 
-let hipodoge = new Mokepon('Hipodoge', './assets/mokepons_mokepon_hipodoge_attack.png', 5, './assets/hipodoge.png')
+let hipodoge = new Mokepon('Hipodoge', './public/assets/mokepons_mokepon_hipodoge_attack.png', 5, './public/assets/hipodoge.png')
 
-let capipepo = new Mokepon('Capipepo', './assets/mokepons_mokepon_capipepo_attack.png', 5, './assets/capipepo.png')
+let capipepo = new Mokepon('Capipepo', './public/assets/mokepons_mokepon_capipepo_attack.png', 5, './public/assets/capipepo.png')
 
-let ratigueya = new Mokepon('Ratigueya', './assets/mokepons_mokepon_ratigueya_attack.png', 5, './assets/ratigueya.png')
+let ratigueya = new Mokepon('Ratigueya', './public/assets/mokepons_mokepon_ratigueya_attack.png', 5, './public/assets/ratigueya.png')
 
 const HIPODOGE_ATAQUES = [
     { nombre: '💧', id: 'boton-agua' },
@@ -430,11 +430,11 @@ function enviarPosicion(x, y) {
                             let mokeponEnemigo = null
                             const mokeponNombre = enemigo.mokepon.nombre || ""
                             if (mokeponNombre === "Hipodoge") {
-                                mokeponEnemigo = new Mokepon('Hipodoge', './assets/mokepons_mokepon_hipodoge_attack.png', 5, './assets/hipodoge.png', enemigo.id)
+                                mokeponEnemigo = new Mokepon('Hipodoge', './public/assets/mokepons_mokepon_hipodoge_attack.png', 5, './public/assets/hipodoge.png', enemigo.id)
                             } else if (mokeponNombre === "Capipepo") {
-                                mokeponEnemigo = new Mokepon('Capipepo', './assets/mokepons_mokepon_capipepo_attack.png', 5, './assets/capipepo.png', enemigo.id)
+                                mokeponEnemigo = new Mokepon('Capipepo', './public/assets/mokepons_mokepon_capipepo_attack.png', 5, './public/assets/capipepo.png', enemigo.id)
                             } else if (mokeponNombre === "Ratigueya") {
-                                mokeponEnemigo = new Mokepon('Ratigueya', './assets/mokepons_mokepon_ratigueya_attack.png', 5, './assets/ratigueya.png', enemigo.id)
+                                mokeponEnemigo = new Mokepon('Ratigueya', './public/assets/mokepons_mokepon_ratigueya_attack.png', 5, './public/assets/ratigueya.png', enemigo.id)
                             }
 
                             mokeponEnemigo.x = enemigo.x
